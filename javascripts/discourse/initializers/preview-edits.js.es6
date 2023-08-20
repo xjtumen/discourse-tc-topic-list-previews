@@ -414,11 +414,13 @@ export default {
           if (this.get("canBookmark")) {
             actions.push(this._bookmarkButton());
             Ember.run.scheduleOnce("afterRender", this, () => {
-              let bookmarkStatusElement = this.element.querySelector(
+              if (this.element !== undefined && this.element !== null) {
+                              let bookmarkStatusElement = this.element.querySelector(
                 ".topic-statuses .op-bookmark"
               );
               if (bookmarkStatusElement) {
                 bookmarkStatusElement.style.display = "none";
+              }
               }
             });
           }

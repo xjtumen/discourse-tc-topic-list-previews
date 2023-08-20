@@ -91,9 +91,9 @@ var renderUnboundPreview = function (thumbnails, params) {
     category_width ||
     settings.topic_list_thumbnail_width;
 
-  const height_style = height ? `height:${height}${attrHeightSuffix};` : ``;
-  const style = `${height_style}width:${width}${attrWidthSuffix}`;
-
+  // const height_style = height ? `height:${height}${attrHeightSuffix};` : ``;
+  // const style = `${height_style}width:${width}${attrWidthSuffix}`;
+  const style = `height:190px;width:100%`;
   return `<img class="${css_classes}" src="${url}" style="${style}" loading="lazy"/>`;
 };
 

@@ -121,6 +121,10 @@ topic_list_thumbnail_resolution_level:
   type: integer
   description:
     en:  "Resolution level of thumbnail used in the Topic List: 0 is original, 1 is next highest, up to 6 lowest. Actual resolution will depend on number of thumbnails available for any one image. Experiment for best setting for your site, but 2 is recommended for Tiles"
+topic_list_thumbnail_size:
+  default: 150
+  description:
+    en: "height of thumbnail in px, width is fixed as 100%"
 topic_list_thumbnail_width:
   default: 150
   description:
@@ -129,14 +133,6 @@ topic_list_thumbnail_height:
   default: 100
   description:
     en: "Height of image that can be previewed."
-topic_list_thumbnail_width_mobile:
-  default: 150
-  description:
-    en: "Width of image that can be previewed on mobile."
-topic_list_thumbnail_height_mobile:
-  default: 100
-  description:
-    en: "Height of image that can be previewed on mobile."
 topic_list_thumbnail_first_x_rows:
   default: 0
   type: integer
